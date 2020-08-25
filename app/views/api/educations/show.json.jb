@@ -1,0 +1,6 @@
+@education.each do |education|
+  {
+    id: education.id,
+    start_date: education.start_date,
+  }
+end

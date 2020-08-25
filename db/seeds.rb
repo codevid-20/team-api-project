@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-experiences = Experience.create(start_date: "7/29/2018", end_date: "N/A", job_title: "software developer", company_name: "Actualize", details: "A teacher at Actualize.")
+experiences = Experience.create(start_date: "7/29/2018", end_date: "N/A", job_title: "software developer", company_name: "Actualize", details: "A teacher at Actualize." student_id:)

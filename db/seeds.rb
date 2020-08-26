@@ -26,3 +26,5 @@ skills = Skill.create(skill_name: "Ruby on Rails")
 skills = Skill.create(skill_name: "HTML")
 
 Education.create(start_date: "01/02/0001", end_date: "01/02/0002", degree: "Beaver Master", university_name: "Sephora University", details: "99 years being dumb...", user_id: "1")
+
+Capstone.create(name: "The D club", description: "a VIP API club", url: "d.url", screenshot: "D.jpg", user_id: "1")

@@ -1,4 +1,5 @@
 @skills.map do |skill|
   {
-    
+    skill_name: skill.skill_name,
   }
+end

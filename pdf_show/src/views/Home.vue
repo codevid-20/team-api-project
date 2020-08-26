@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-  
     <button v-on:click="createPDF()"> CREATE </button>
   </div>
 </template>
@@ -13,11 +11,6 @@
 import jsPDF from "jspdf";
 
 export default {
-  data: function () {
-    return {
-      message: "Welcome to Vue.js!",
-    };
-  },
   created: function () {
     this.createPDF();
   },
@@ -33,16 +26,4 @@ export default {
   },
 };
 // @ is an alias to /src
-</script>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
 </script>

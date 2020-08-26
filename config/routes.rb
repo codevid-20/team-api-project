@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   namespace :api do
     get "/students" => "students#index"
 
+    get "/education" => "educations#index"
     post "/education" => "educations#create"
     get "/education/:id" => "educations#show"
+    put "/education/:id" => "educations#update"
+    delete "/education/:id" => "educations#destroy"
   end
 end

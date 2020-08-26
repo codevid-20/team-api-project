@@ -15,4 +15,14 @@ experiences = Experience.create(start_date: "2/03/2012", end_date: "07/22/2014",
 
 experiences = Experience.create(start_date: "08/10/2014", end_date: "06/30/2018", job_title: "web developer", company_name: "Lavender Space", details: "Designed the company's website and worked on the front end.")
 
+skills = Skill.create(skill_name: "Ruby")
+
+skills = Skill.create(skill_name: "Javascript")
+
+skills = Skill.create(skill_name: "CSS")
+
+skills = Skill.create(skill_name: "Ruby on Rails")
+
+skills = Skill.create(skill_name: "HTML")
+
 Education.create(start_date: "01/02/0001", end_date: "01/02/0002", degree: "Beaver Master", university_name: "Sephora University", details: "99 years being dumb...", user_id: "1")

@@ -1,12 +1,23 @@
 <template>
   <div class="home">
+    <br>
+    <br>
     <button v-on:click="createPDF()"> Save Your PDF </button>
+    <br>
+    <br>
+    <img src=https://media.tenor.com/images/dd4f740963fd8734eb7bc1ad83c7d2d3/tenor.gif>
     <br>
     <br>
     <button v-on:click="kreatePDF()"> Save A Bigger PDF </button>
     <br>
     <br>
+    <img src=https://media.tenor.com/images/c88212174d4dc4129f76b9a4fff8561e/tenor.gif>
+    <br>
+    <br>
+    <br>
     <button v-on:click="qreatePDF()"> Save An Even Bigger Looking PDF </button>
+    <br>
+    <br>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
   <div class="home">
     <h1>{{ message }}</h1>
   
-    <button v-on:click="createPDF()"> CLICK HERE TO SAVE </button>
+    <button v-on:click="createPDF()"> CREATE </button>
   </div>
 </template>
 
@@ -19,6 +19,7 @@ export default {
     };
   },
   created: function () {
+    this.createPDF();
   },
   methods: {
     createPDF: function () {
@@ -26,7 +27,7 @@ export default {
       let pdfName = "test";
       var doc = new jsPDF();
       console.log("Thanks Romney");
-      doc.text(10, 10, "Dolphin Pod 4Ever n' Ever");
+      doc.text(10, 10, "Hello World");
       doc.save(pdfName + ".pdf");
     },
   },

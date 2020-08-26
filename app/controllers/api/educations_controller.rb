@@ -1,7 +1,7 @@
 class Api::EducationsController < ApplicationController
   #must have user_id
   def index
-    @education = Education.where(user_id: 1)
+    @education = Education.where(params[:id])
     render "index.json.jb"
   end
 
@@ -18,12 +18,12 @@ class Api::EducationsController < ApplicationController
   end
 
   def show
-    @education = Education.find_by(id: 2)
+    @education = Education.find_by(params[:id])
     render "show.json.jb"
   end
 
   def update
-    @education = Education.find_by(id: 2)
+    @education = Education.find_by(params[:id])
     @education.start_date = params[:start_date] || @education.start_date
     @education.end_date = params[:end_date] || @education.end_date
     @education.degree = params[:degree] || @education.degree
@@ -35,7 +35,7 @@ class Api::EducationsController < ApplicationController
   end
 
   def destroy
-    @education = Education.find_by(id: 2)
+    @education = Education.find_by(params[:id])
     @education.destroy
     render "destroy.json.jb"
   end

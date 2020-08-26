@@ -16,12 +16,12 @@ class Api::CapstonesController < ApplicationController
   end
 
   def show
-    @capstone = Capstone.find_by(id: 2)
+    @capstone = Capstone.find_by(params[:id])
     render "show.json.jb"
   end
 
   def update
-    @capstone = Capstone.find_by(id: 2)
+    @capstone = Capstone.find_by(params[:id])
     @capstone.name = params[:name] || @capstone.name
     @capstone.description = params[:description] || @capstone.description
     @capstone.url = params[:url] || @capstone.url
@@ -33,7 +33,7 @@ class Api::CapstonesController < ApplicationController
   end
 
   def destroy
-    @capstone = Capstone.find_by(id: 2)
+    @capstone = Capstone.find_by(params[:id])
     @capstone.destroy
     render "destroy.json.jb"
   end
